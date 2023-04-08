@@ -4,10 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.desarrollo.petshop.models.producto;
 import com.desarrollo.petshop.repositories.productoRepository;
 import com.desarrollo.petshop.services.productoService;
+
 
 @Service
 public class productoServiceImpl implements productoService {
@@ -21,9 +23,9 @@ public class productoServiceImpl implements productoService {
     }
 
     @Override
+    @Transactional
     public void guardar(producto producto) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'guardar'");
+        productoRepository.save(producto);
     }
 
     @Override
