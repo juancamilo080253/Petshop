@@ -1,6 +1,5 @@
 package com.desarrollo.petshop.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.desarrollo.petshop.models.producto;
 import com.desarrollo.petshop.services.productoService;
 
 
@@ -21,7 +19,7 @@ public class inicioController {
     @GetMapping("/catalogo")
     public String goToCatalogo(Model model){    
        var productos = productoService.listarProdutos();
-       model.addAttribute("productos", productos);
+       model.addAttribute("productos", productos);  //variable que hemos compartido "entre comillas"
         return "catalogo";
     }
 
