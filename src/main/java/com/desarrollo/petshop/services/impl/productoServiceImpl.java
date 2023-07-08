@@ -33,7 +33,7 @@ public class productoServiceImpl implements productoService {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'eliminar'");
     }
-
+    
     @Override
     public producto encontrarProducto(producto producto) {
         // TODO Auto-generated method stub

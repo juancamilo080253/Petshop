@@ -1,0 +1,32 @@
+body{
+    background-color: #f3f3f3;
+}
+main{ 
+    width: 940px; 
+    margin: 0 auto;
+    font-size: 20px; 
+} 
+ 
+.imagen-equipo{ 
+    margin: 20px 0;
+    padding: 30px 0;
+    margin-left: auto;   
+    margin-right: auto; 
+    display: block; 
+    width: 300px; 
+     
+}
+ 
+h2{
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.texto{
+    margin: 20px 0;
+    padding: 5px 0;
+    line-height: 2em;
+}
+ 
