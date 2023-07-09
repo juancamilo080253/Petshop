@@ -38,7 +38,24 @@ nav a:hover{
 
 
 /* FINALIZA HEADER */
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.card {
+  width:calc(50% - 10px);
+  margin-right: 20px;
+}
+
+.card-title {
+  text-transform: none;
+}
+
+.card-text{
+    text-transform: none;
+}
 /*footer*/
 
 
