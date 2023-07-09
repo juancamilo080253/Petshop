@@ -18,7 +18,7 @@ public class inicioController {
     @Autowired
     productoService productoService;
 
-    @GetMapping("/catalogo")
+    @GetMapping("/")
     public String goToCatalogo(Model model){    
        var productos = productoService.listarProdutos();
        model.addAttribute("productos", productos);  //variable que hemos compartido "entre comillas"
