@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/inicio.css">
-    <link rel="stylesheet" href="../static/css/nosotros.css">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/inicio.css}">
+    <link rel="stylesheet" th:href="@{/css/nosotros.css}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Nosotros</title>
 </head>
@@ -14,14 +14,14 @@
     <header>
         <div>
             <a class="logo" href="/">
-                <img class="imagen-logo" src="../static/images/logo.jpg" alt="logo petshop">
+                <img class="imagen-logo" th:src="@{/images/logo.jpg}" alt="logo petshop">
             </a>
         </div>
         <nav>
             <ul class="navegacion">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/catalogo.html">Catalogo</a></li>
-                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/catalogo">Catalogo</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
             </ul>
         </nav>
 
@@ -29,7 +29,7 @@
 
     <main> 
          
-        <img class="imagen-equipo" src="../static/images/team.svg" alt=""> 
+        <img class="imagen-equipo" th:src="@{/images/team.svg}" alt=""> 
        
         <H2>Nuestro proposito</H2> 
         <p style="text-align: justify; line-height: 1.5;">El propósito de PetShop es promover la felicidad y el bienestar de las mascotas al ofrecer alimentos de calidad y servicios relacionados. Su objetivo principal es ir más allá de ser una simple tienda en línea de comida para mascotas, buscando contribuir al bienestar general de las mascotas. Para lograrlo, proporcionan una selección cuidadosamente curada de alimentos saludables, adaptados a las necesidades individuales de cada mascota. Buscan ser un recurso confiable para los dueños de mascotas, ofreciendo una experiencia de compra excepcional, servicio al cliente personalizado y amigable. En resumen, el propósito de PetShop es promover la felicidad y el bienestar de las mascotas y sus dueños, ofreciendo alimentos de calidad, conocimientos útiles y un servicio excepcional. </p> 

@@ -20,9 +20,7 @@ public class inicioController {
 
     @GetMapping("/")
     public String goToCatalogo(Model model){    
-       var productos = productoService.listarProdutos();
-       model.addAttribute("productos", productos);  //variable que hemos compartido "entre comillas"
-        return "catalogo";
+        return "index";
     }
 
     @PostMapping("/crearProducto")
@@ -40,8 +38,10 @@ public class inicioController {
         return "nosotros"; //redirige plantilla, si es el nombre de un archivo lo devuelve
     }
 
-    @GetMapping("/contacto")
-    public String goTocontacto(Model model){
-        return "contacto";
+    @GetMapping("/catalogo")
+    public String goTocatalogo(Model model){
+        var productos = productoService.listarProdutos();
+       model.addAttribute("productos", productos);  //variable que hemos compartido "entre comillas"
+        return "catalogo";
     }
 }
