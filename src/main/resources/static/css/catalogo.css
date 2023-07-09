@@ -1,3 +1,38 @@
-h1{
-    text-align: center;
+/* COMIENZA HEADER */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #b57ab0;
+    width: 100%;
+    align-items: center; 
+}
+
+.imagen-logo{
+    height: 90px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 8px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+}
+
+/* TERMINA HEADER */
+
+main{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
 }
