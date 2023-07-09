@@ -20,5 +20,6 @@ public class producto {
     private String nombre_producto;
     private Integer precio;
     private String descripcion;
+    private String link;
     
 }
